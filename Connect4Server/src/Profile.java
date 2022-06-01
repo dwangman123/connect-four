@@ -1,0 +1,95 @@
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+import org.bson.Document;
+
+public class Profile extends Thread
+{
+	ServerSocket ss;
+	public void run()
+	{
+		try {
+			ss = new ServerSocket(4347, 10);  
+		} catch (IOException e1) {
+			return; 
+		} 
+		while(true)
+		{
+			try {
+				Socket s = ss.accept();
+				new GetProfile(s).start(); 
+			}
+			catch(IOException e)
+			{
+				
+			}
+		}
+	}
+}
+
+class GetProfile extends Thread 
+{
+	Socket s;
+	public GetProfile(Socket s)
+	{
+		this.s = s;
+	}
+	
+	public void run()
+	{
+		try {
+			InputStream is = s.getInputStream(); 
+			OutputStream os = s.getOutputStream();
+			
+			byte[] lenBytes = new byte[4];
+	        is.read(lenBytes, 0, 4);
+	        int len = (((lenBytes[3] & 0xff) << 24) | ((lenBytes[2] & 0xff) << 16) |
+	                  ((lenBytes[1] & 0xff) << 8) | (lenBytes[0] & 0xff));
+	        byte[] receivedBytes = new byte[len];
+	        is.read(receivedBytes, 0, len);
+	        String username = new String(receivedBytes, 0, len);
+	        
+			/*var result = CRUD.listOfMatches(CRUD.collection, username);
+			String json = "{\"matches\":[";
+			    for(int i = 0; i < result.size(); i++) {
+		            Document doc = result.get(i);
+		            String temp = doc.toJson();
+		            temp.substring(temp.indexOf(":")+2, temp.length()-1);
+		            json += temp;
+		            if(i+1 < result.size()) {
+		            	json += ",";
+		            }
+			    }
+			    json += "]"; */
+			    var temp = CRUD.returnUser(CRUD.collection, username); 
+				//json += ", ";
+				var json = temp.toJson(); 
+				   // json += "}"; 
+				  
+	        // Sending
+	        String toSend = json;
+	        
+	        byte[] toSendBytes = toSend.getBytes();
+	        int toSendLen = toSendBytes.length;
+	        byte[] toSendLenBytes = new byte[4];
+	        toSendLenBytes[0] = (byte)(toSendLen & 0xff);
+	        toSendLenBytes[1] = (byte)((toSendLen >> 8) & 0xff);
+	        toSendLenBytes[2] = (byte)((toSendLen >> 16) & 0xff);
+	        toSendLenBytes[3] = (byte)((toSendLen >> 24) & 0xff);
+	        os.write(toSendLenBytes);
+	        os.write(toSendBytes);
+	        is.close();
+	        os.close();
+	        s.close();
+		}
+		catch(IOException e) 
+		{
+			
+		}
+	}
+	
+	
+}

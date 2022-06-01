@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ka/cTyPmWL51EpLVd2vs1GisBn9lOg6mAySOVPoGMpefOdMl6meDINAKFCnE2MQnNJGCVwYsmwBmenVr3oNLEQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sabertooth\\Documents\\Visual Studio 2019\\Projects\\Connect4Client\\Connect4Client\\Connect4Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sabertooth\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.21\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.21.nupkg.sha512",
+    "C:\\Users\\Sabertooth\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.21\\microsoft.netcore.app.runtime.win-x64.3.1.21.nupkg.sha512",
+    "C:\\Users\\Sabertooth\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.21\\microsoft.aspnetcore.app.runtime.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}

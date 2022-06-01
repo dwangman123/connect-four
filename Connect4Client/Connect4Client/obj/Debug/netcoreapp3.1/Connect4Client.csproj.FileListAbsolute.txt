@@ -1,0 +1,16 @@
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\bin\Debug\netcoreapp3.1\Connect4Client.exe
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\bin\Debug\netcoreapp3.1\Connect4Client.deps.json
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\bin\Debug\netcoreapp3.1\Connect4Client.runtimeconfig.json
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\bin\Debug\netcoreapp3.1\Connect4Client.runtimeconfig.dev.json
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\bin\Debug\netcoreapp3.1\Connect4Client.dll
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\bin\Debug\netcoreapp3.1\Connect4Client.pdb
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\obj\Debug\netcoreapp3.1\Connect4Client.csprojAssemblyReference.cache
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\obj\Debug\netcoreapp3.1\Connect4Client.Form1.resources
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\obj\Debug\netcoreapp3.1\Connect4Client.csproj.GenerateResource.cache
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\obj\Debug\netcoreapp3.1\Connect4Client.AssemblyInfoInputs.cache
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\obj\Debug\netcoreapp3.1\Connect4Client.AssemblyInfo.cs
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\obj\Debug\netcoreapp3.1\Connect4Client.csproj.CoreCompileInputs.cache
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\obj\Debug\netcoreapp3.1\Connect4Client.dll
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\obj\Debug\netcoreapp3.1\Connect4Client.pdb
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\obj\Debug\netcoreapp3.1\Connect4Client.genruntimeconfig.cache
+C:\Users\Sabertooth\Documents\Visual Studio 2019\Projects\Connect4Client\Connect4Client\obj\Debug\netcoreapp3.1\Connect4Client.Properties.Resources.resources
